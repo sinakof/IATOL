@@ -1,0 +1,510 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+
+/*scroll-behavior:smooth;*/
+}
+body{
+/* background:#f5f7fb; */
+background-color: #002222;
+color:#aacdb5;
+line-height:1.7;
+}
+header{
+background:#0b3d91;
+/*
+background:#002147;*/
+padding:15px 8%;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.logo{
+display:flex;
+align-items:center;
+color:white;
+font-size:24px;
+font-weight:700;
+margin-left: -50%;
+}
+.logo img{
+width:55px;
+margin-right:12px;
+
+}
+nav ul{
+display:flex;
+list-style:none;
+}
+nav ul li{
+    margin-left: 30px;
+}
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+
+}
+nav ul li a:hover{
+color: #0b3d91;
+/*color:#ffb400;*/
+background-color: white;
+padding: 2px;
+border-radius: 3px;
+
+}
+.hero{
+background: url(/IPOL-ENFA/photos/0023.jpg) center/cover;
+height:90vh;
+background:linear-gradient(rgba(2,0,4,0.6),rgba(2,0,0,0.6)),url('/IPOL-ENFA/photos/lectures2.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+/*color: black;*/
+padding:20px;
+
+}
+
+.hero-content img{
+    border-radius: 50% 50%;
+}
+.hero-content{
+/*background-color: #848785;*/
+border-radius: 10px;
+padding: 5px 20px;
+}
+
+.hero-content:hover{
+/*background-color: #d5e0d8; */
+background-color: #00152d;
+border-radius: 10px;
+padding: 5px 20px;
+}
+
+.hero-content h1{
+font-size:40px;
+margin-bottom:20px;
+}
+.hero-content p{
+font-size:20px;
+max-width:850px;
+margin:auto;
+margin-bottom:30px;
+}
+.hero-content h1:hover{
+font-size:40px;
+margin:auto;
+color: blue;
+margin-bottom:30px;
+}
+
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:#ffb400;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:0.3s;
+}
+.btn:hover{
+background:#ff9900;
+transform:scale(1.05);
+}
+
+.btn2{
+display:inline-block;
+padding:14px 28px;
+background-color: black;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:0.3s;
+}
+.tol{
+    color: red;
+}
+.btn2:hover{
+background-color: #25D366;
+transform:scale(1.05);
+}
+
+
+section{
+padding:100px 8%;
+}
+.section-title{
+text-align:center;
+font-size:38px;
+margin-bottom:20px;
+color: white;
+margin-top: -30px;
+/* color:#002147; */
+}
+
+.jaune{
+     color: #ff9900; 
+     border-bottom: solid 2px white;
+     border-radius: 5px;
+}
+.jaune2{
+      border-bottom: solid 2px#ffb400;
+       border-radius: 5px;
+}
+
+
+.section-subtitle{
+text-align:center;
+max-width:850px;
+margin:auto;
+margin-bottom:50px;
+color: #aacdb5;
+/* color:#555; */
+}
+.about, .mission, .why{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+.box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+.box:hover{
+transform:translateY(-8px);
+}
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+.service-card{
+/* background:white; */
+padding:25px;
+background-color: #14272b; 
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+color: #aacdb5;
+border: solid 0.01px greenyellow;
+/* cursor:pointer; */
+}
+.service-card:hover{
+transform:translateY(-8px);
+background:#002147;
+color:white;
+border: solid 0.01px whitesmoke;
+}
+.service-card h3{
+margin-bottom:15px;
+  /* color: blue; */
+background-color: #14272b;
+/*background:white; */
+padding:10px;
+ color:  #ff9900;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+border: solid 0.02px rgb(81, 82, 81);
+}
+
+
+
+/*STYLE POUR  DU COMPTEUR ELETRICQUE*/
+.compteur{
+/*margin-left: 25%;
+   margin-bottom: -150px;*/
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 30px;
+   margin-bottom: -150px;
+}
+.compteur p{
+     background-color:  rgba(0.56, 240, 237, 0.082);
+    color: white;
+    padding: 5px;
+  border: solid 0.01px rgb(81, 82, 81);
+  padding: 3px;
+}
+
+.compteur p:hover{
+    background-color:black;
+    padding: 5px;
+    transition:0.3s;
+    transform:translateY(-8px);
+}
+
+.compteur img{
+animation:  flache 3s infinite 3s
+
+}
+
+@keyframes flache{
+
+0%{  opacity: 0 }
+100%{ opacity: 2px; margin-left: 2px; margin-right:5px ;}
+
+}
+
+/*STYLE DE ELCTRICITE MODULE RAPIDE LENTE ET RECYLCH*/
+.Electric-module{
+    text-align: center;
+    color:red
+}
+.ou{
+    color: white;
+}
+
+/*STYLE POUR LES LIENS RAPIDE*/
+/*STYLE POUR LES LIENS RAPIDE*/
+.aller{
+list-style: none;
+text-decoration: none;
+background-color: white;
+border-radius: 30px;
+ color:rgb(30, 97, 241);
+padding: 10px;
+}
+.aller{
+ animation:mouve 10s infinite 2s;
+}
+
+@keyframes mouve{
+
+10%{ opacity: 2}
+100%{ opacity:3 ; background-color: blue; color: whitesmoke; margin-left: 2px; margin-right:5px}
+ /* 0%{ margin: 0px 2px ;color: #d32525; }
+    4%{margin: 0px 1px ; color:rgb(255, 0, 34)} */
+}
+
+/* .aller:hover{ 
+ background-color: yellow;
+transform:scale(5.05);
+padding: 8px;}    */
+
+/*ICI STYLE DE LA LA PHRRSE QUI EST JUSTE EN DESSOU DE CONTACTER*/
+.h4{
+   margin-left: 30%;
+   color: #6d6de4;
+   display: inline-block;
+   padding: 5px;
+   border-radius: 5px;
+}
+
+
+
+
+.formation-detail{
+/* background:white; */
+margin-top:60px;
+background-color: #14272b;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+color: #aacdb5;
+}
+
+.formation-detail h2{
+text-align: center;
+color: #6d6de4;
+   /* color:   #002147; */
+}
+.formation-detail{
+animation:laby 30s infinite 30s;
+}
+
+@keyframes laby{
+
+    50%{ color:black; background-color:black  }
+100%{ color:white; background:linear-gradient(rgba(2,0,4,0.6),rgba(2,0,0,0.6)),url('/IPOL-ENFA/photos/VICTOIRE.jpg');
+     }
+/* 0%{ margin: 0px 2px ;color: #d32525; }
+ 4%{margin: 0px 1px ; color:rgb(255, 0, 34)} */
+}
+
+
+.contact-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+}
+.contact-info{
+/* background:rgb(189, 178, 178); */
+background-color: #14272b; 
+color:white;
+padding:35px;
+border-radius:15px;
+}
+.p1 {
+color: #6d6de4;
+margin-left: 5%;
+font-size: 25px;
+}
+
+.contact-info li {
+    list-style: none;
+    background-color: #555;
+    border-radius: 5%;
+}
+.contact-info li a{
+    color: rgb(163, 227, 228);   
+    margin-left:10% ;
+    text-decoration: none;
+    font-size:15px ;
+   
+}
+.couleur{
+    color: black;
+    font-size: 17px;
+}
+
+.contact-info li a:hover{
+    color: white;
+    padding: 2px;
+}
+.contact-form{
+/* background:white; */
+background-color: whitesmoke;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:14px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+.contact-form button{
+border:none;
+}
+
+
+
+footer{
+/* background:#00152d;  */
+/* background:#010913;  */
+background:#040b19; 
+/* color: #aacdb5; */
+ color:blue;
+/*padding:40px 8%;*/
+padding: 10px 5px;
+
+
+}
+
+/* piede de page styliation*/
+.foot-entete{
+     display: flex;
+     /*justify-content: space-around; */
+     flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+   
+     }
+   
+    .coll{
+       /* background:#041d39; */
+       font-size: 18px;
+
+    }
+    ul{
+        margin-top: 10px;
+    }
+
+     ul li{
+        list-style: none;
+        flex-wrap: wrap;
+     }
+      ul li a{
+       text-decoration: none;
+       flex-wrap: wrap;
+      color: #aacdb5;
+          /* color: rgb(216, 102, 102); */
+       /* color: whitesmoke; */
+     }
+
+      ul li a:hover{
+       text-decoration: none;
+       flex-wrap: wrap;
+       color: rgb(220, 112, 112);
+       
+       border-bottom: solid 2px #ff9900;    /* white ; */
+     }
+      
+
+      .igo{
+        border-radius: 50%;
+
+     }
+
+
+     .copie-right{
+        margin-top: 1spx;
+       text-align: center;
+          color:#555;
+     }
+     
+.socials a{
+color:white;
+margin:0 10px;
+font-size:20px;
+text-decoration:none;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+@media(max-width:900px){
+nav{
+flex-direction:column;
+}
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+.hero-content h1{
+font-size:40px;
+}
+}

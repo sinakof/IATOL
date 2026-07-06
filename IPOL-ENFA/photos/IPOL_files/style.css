@@ -1,0 +1,1006 @@
+
+header{
+    background-color: rgb(241, 243, 248);
+    position: fixed;
+    padding:5px 10%; 
+    padding-left:0%;
+
+    width: 100%;
+    height: 12%;
+/* z-index por faire passer un element au desous ou dessus de lautre;*/
+    z-index: 5;
+    text-align: justify;
+    border-radius: 2px;
+    margin-top: -8px;
+    flex-wrap: wrap;
+    z-index: 20;
+
+}
+header img{
+  margin-top: 5px;
+  margin-left: 2%;
+  border-radius: 50%;
+
+  
+}
+html{
+    /*le crole permet des assendant des deffierents page de haut et 
+     bas lors de la navigation dans les different menus*/
+      scroll-behavior: smooth;
+}
+header h1{
+     text-transform: uppercase;
+     font-size: 0.9rem;
+     font-weight: lighter;
+     border: solid 2px rgb(248, 248, 248);
+     color: white;
+     background-color: blue;
+     /* diplay ilne-block permet de reduire le background au meme largeur que le texte*/
+     display: inline-block;
+     padding:70px;
+     border-radius: 15px;
+     align-items: center;
+     margin-left:  95px;
+     margin-bottom: -9px;
+     justify-content: center;
+     justify-content: space-around;
+
+     /*margin: 10px  10px;
+     margin-bottom: 10px;*/
+
+}
+header h1.main-title1{
+
+     text-transform: unset;
+     font-size: 1.1rem;
+     font-weight: bold;
+     border: solid 0.05px rgb(244, 248, 243);
+     color: white;
+      background-color: rgb(217, 217, 241);
+     /* ici c'est un commentaire diplay ilne-block permet de reduire le background au meme largeur que le texte*/
+     display: inline-block;
+
+     padding: 0px 5px;
+     border-radius: 5px;
+     align-items: center;
+     margin: 2px 7px; 
+    
+   /* padding: 2px 15px;
+    border-radius: 15px;
+    align-items: center;
+    margin: 10px 70px; */
+    text-align: justify;
+    justify-content: center;
+
+}
+
+
+header h2.main-title2{
+
+    text-transform: unset;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: solid 1px rgb(244, 248, 243);
+    color: white;
+    background-color: rgb(217, 217, 241);
+    /* ici c'est un commentaire diplay ilne-block permet de reduire le background au meme largeur que le texte*/
+    display: inline-block;
+
+    padding: 0px 5px;
+    border-radius: 5px;
+    align-items: center;
+    margin-left:700px; 
+    margin-top: 1px;
+    
+   /* padding: 2px 15px;
+    border-radius: 15px;
+    align-items: center;
+    margin: 10px 70px; */
+    text-align: justify;
+    justify-content: center;
+    
+}
+
+
+
+span.isofil{
+    color:rgb(239, 181, 181) ;
+    font-size: 20px;
+}
+.welcome{
+     text-transform: unset;
+    max-width: 100%;
+    width: 1200px;
+    position: relative;/* la possition rlative permet a cet
+     element de glissser sur l'autre*/
+   /* background-color: blueviolet;*/
+     margin: 6px auto;
+     height: 250px;
+     flex-wrap: wrap;
+}
+.welcome img{
+    top: 23%;
+    position: absolute; /*permet a cet element de reste fixer a son endroit donnee
+    par ici limage serai fixe et sa taille donnee*/
+    left: 77%;
+    width: 100;
+   /* width: 120px;*/
+     margin-top: 15px;
+     background-color: rgb(198, 157, 210);
+     border-radius: 50%;
+     border-top-right-radius:0px;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.marque{
+    border-radius: 50%;
+    margin-top:70px;
+}
+.welcome img:hover{
+     transition: 8s ease;
+      border-radius:2%;
+      margin: 1px;
+}
+.bien h2{
+    color: rgb(51, 12, 224);
+}
+.welcome h2{
+     text-transform: unset;
+    top: 20% ;
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    left: 4%;
+    margin-top: 15px;
+    color: black;
+    top: 40%;
+    flex-wrap: wrap;
+}
+.welcome h2 span{
+    color: rgb(16, 13, 242);
+    font-weight: bolder;
+}
+
+nav{
+    position: sticky;/*permet de faire arreter le menu en defillant vers le haut*/
+    top: 85px;
+    background-color: rgb(209, 218, 227);   
+    margin: 10px auto;
+    z-index: 15;/*pour fair cliser le menu au nave au dessus du body*/
+    flex-wrap: wrap;
+    width: 100.5%;  
+
+    border-bottom:solid 0.01px black;
+
+}
+nav ul{
+    display: flex; 
+    justify-content: space-evenly;
+    padding: 8px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.slogan{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.slogan:hover{
+     background-color: rgb(209, 218, 227);  
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgba(2, 2, 2, 0.932);
+}
+nav ul li a:hover{ 
+    color: rgb(31, 12, 237);
+    border-bottom: solid lemonchiffon;
+    transition: 0.5s ease; 
+    margin-right: 1%;  
+    font-size: 1.7rem;
+  
+}
+
+/* partie lettre roulant et son image*/
+.di1{
+ background-image: url("/PICTURE/navire1.jpg");
+ padding-top: 0.01px;
+ height: 2%;
+}
+
+.bien{
+ margin-top: -18%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 2px;
+
+}
+.bien img{
+    padding: 15px;
+    justify-content: center;
+    margin-left: 40%;
+    
+}
+/*debut de style de la partie principale*/
+/*main content style   : partie du corps du page web*/ 
+ main.main-content{
+     width: 99%;
+     margin: 80px auto;
+     flex-wrap: wrap;
+     background-color:hsl(0, 0%, 100%);
+}
+
+.section h2{ /* pour les grands titre de chaQUE PARTIE*/
+     text-transform: unset;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(83, 38, 246);
+    font-size: 30px;
+    margin-left: 10px;
+}
+section p{ /*pour les paragraphe de chaque tutre*/
+    font-size:1.4rem;
+    color:black;
+    padding: 5px;
+}
+                                /*style des premeir photo*/
+/*.images{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}*/
+
+/* A propos partie isofil*/
+.ISOFIL{
+    color: rgb(83, 199, 241);
+}
+  /*partie mission */
+.photo{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    /*
+     width: 100%;
+     border-radius: 50%;
+     border: solid 2px rgb(31, 182, 182);
+     width: 200px;
+     height: 200px;
+     margin-left: 33%;*/
+}
+
+/*ici pour service logistique*/
+
+.pho{ /*le hover pour les photo*/
+
+      width: 200px;
+     height: 200px;
+     display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+
+}
+.pho:hover{ /*hover pour les image des service*/
+      transition: 8s ease;
+      border-radius:2%;
+      margin: 1px;
+}
+
+.remonter h2{ /* ici jairemonter un peu la premeier section pour a propos*/
+    margin-top: -50px;
+}
+.nombre-colonne{ /* style du texet qui est au niveau de a propos*/
+     column-count:2;
+     max-width: 80%;
+     align-items: center;
+     margin-left: 90px;
+     background-color: white;
+     border-radius: 30px 5px;
+     font-size: 21px;
+     border-left: black solid 2px;
+}
+/*.nombre-colonne:hover{
+      transition: 8s ease;
+      border-radius:2%;
+      margin: 1px;
+}*/
+
+.nombre-colonne1{
+    width: 60%;
+    background-color:white;
+    border-style: blac;
+    border-radius: 35% 3%;
+    margin-left: 20%;
+    padding: 25px;
+     border: solid 2px  rgb(225, 223, 223)
+}
+.nombre-colonne1:hover{
+     color: rgb(224, 114, 114);
+     border: solid 1px  rgb(60, 53, 53);
+     transition: 0.5s ease; 
+     margin-inline-end: 3px;
+
+ 
+}
+img.pho{     /*...pour la partie qui peut nous choisir..*/
+     width: 150px;
+     height: 100px;
+     border-radius: 0% 25%;
+     border: solid 1px rgb(99, 113, 113);
+     margin-left:18% ;
+}
+/*....pour la partie pouquoi nous choisir.....*/
+img.phot{
+      width: 150px;
+     height: 100px;
+     border-radius: 0% 25%;
+     border: solid 1px rgb(99, 113, 113);
+     margin-left:50% ;
+}
+.texte-pourquoi-nous{
+    
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction:row;
+     background-color: rgb(239, 239, 244);
+     width: 50%;
+     margin-left:30% ;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     border-left: black solid 2px;
+     
+}
+.texte-pourquoi-nous li{
+    font-size: 25px;
+ 
+}
+ /*/////////////////////parties services generale///////*/
+
+
+
+/*page generale pour les services: image pour le services*/
+
+.pho-service{
+    width: 150px;
+     height: 150px;
+     border-radius: 40%;
+     border: solid 1px rgb(99, 113, 113);
+     margin-left:40% ;  
+}
+
+/*page du service principale diesign*: modifier le le mercredi 21 / 01/2016/*/
+.texte-generale-service{
+     background-color: whitesmoke;
+     display: flex;
+     flex-direction:row;
+     width: 87%;
+     margin-left: 7%;
+     padding: 3px;
+     gap: 11px;
+     background-image: url(/EXER1/navire3.jpg);
+}
+.texte-generale-service img{
+     width: 200px;
+     height: 200px;
+     border-radius: 20%;
+     margin-top: 2%;
+     background-color: black;
+}
+
+.texte-generale-service img:hover{
+     border: solid rgb(5, 8, 209);
+     transition: 5s ease; 
+     border-radius: 3px;
+     margin: 5px;
+
+}
+.texte-generale-service p{
+     text-align: justify;
+     padding: 3px 20px;
+     background-color: white;
+     border: wheat solid 1.5px;
+    border-radius: 25px;
+    }
+
+.logistic-elements{  /*ici c'est style de service logitique*/
+    background-image: url(/EXER1/navire1.jpg);
+}
+
+.lo{                      
+    color: rgb(32, 46, 241);
+}
+/*ici pour le roulant top service-logistique-transit----*/
+
+
+p.t{
+    color:white;
+    background-color:blue;
+    width: 20%;
+    text-align: center;
+    border-radius: 30px;
+    border-left: black solid 2px;
+}
+p.t:hover{
+ 
+     color: black;
+   
+     transition: 0.5s ease; 
+     margin-inline-end: 3px;
+     background-color: white;
+}
+
+.logi:hover{
+    transition: 0.2s ease;
+    border-radius:40%;
+    margin: 3px;
+    padding: 5px auto;
+    justify-content: flex-start;
+
+}
+ol h4{
+    color: rgb(122, 122, 168);
+}
+ol h4:hover{
+    color: blue;
+    margin: 1.5px;
+    transition: 05s;
+}
+
+.log1{
+     background-color: white;
+     border-radius: 20px;
+     border: solid 0.5px  rgb(225, 223, 223);
+     margin: 10px;
+}
+.log1:hover{
+     transition: 0.2s ease;
+     margin-left: 3px;
+     padding: 5px auto;
+     justify-content: flex-start;
+     border-color: black;
+     background-color: white;
+}
+.log2{
+     background-color:white;
+     border-radius: 20px;
+     border: solid 0.5px  rgb(225, 223, 223);
+     margin: 10px;
+}
+.log2:hover{
+     transition: 0.2s ease;
+     margin-left: 3px;
+     padding: 5px auto;
+     justify-content: flex-start;
+     border-color: black;
+     background-color: white;
+}
+.log3{
+     background-color: white;
+     border-radius: 20px;
+     border: solid 0.5px  rgb(225, 223, 223);
+       margin: 10px;
+}
+.log3:hover{
+     transition: 0.2s ease;
+     margin-left: 3px;
+     padding: 5px auto;
+     justify-content: flex-start;
+     border-color: black;
+     background-color: white;
+}
+.log4{
+     background-color: white;
+     border-radius: 20px;
+     border: solid 0.5px  rgb(225, 223, 223);
+     margin: 10px;
+}
+.log4:hover{
+     transition: 0.2s ease;
+     margin-left: 3px;
+     padding: 5px auto;
+     /*justify-content: flex-start;*/
+     border-color: black;
+     background-color: white;
+}
+
+.logi a{
+  text-align: center;
+  color: blue;
+   margin-left: 65%;
+   font-size: 20px;
+   text-decoration: none;
+}
+.logi a:hover{
+   
+     transition: 0.5s ease; 
+     text-shadow: 3px;
+     border-bottom: solid rgb(118, 25, 232);
+     transition: 0.5s ease; 
+
+     border-radius: 3px;
+     }
+
+/*page srvice transit* modifier le mercredi 21/ 01/2026*/
+.transit-elements{
+     background-image: url(/EXER1/navire3.jpg) ;
+}
+ .texte-generale-service-transit1{
+     
+     text-align: justify;
+     width: 85%;
+     padding: 3px 20px;
+     background-color: white;
+     border: wheat solid 1.5px;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-top: 10px;
+   
+ }
+ .texte-generale-service-transit2{
+     display: flex;
+     width: 85%;
+     gap: 10px;
+     margin-left:7%;
+     margin-top: 20px;
+     border-radius: 15px;
+     background-color: rgb(131, 130, 130);
+     border-left: black solid 2px;
+    
+      /*background-image: url(/PICTURE/navire3.jpg) ;*/
+   
+ }
+ .transit-top{
+     text-align: center;
+     background-color: yellowgreen;
+     width: 15%;
+     margin-left: 40%;
+     border-radius: 50%;
+
+      }
+ .texte-generale-service-transit2 p{
+    background-color: white;
+    border: rgb(13, 13, 13) solid 1.5px;
+    width: 58%;
+    margin-left: 3px;
+    padding: 10px;
+    text-align: justify;
+  
+ }
+  .texte-generale-service-transit2 ul{
+    background-color:whitesmoke;
+    width: 35%;
+    border-radius: 30px;
+
+   /* border-top-right-radius:0px;*/
+
+  }
+ .texte-generale-service-transit2 ul li{
+    font-size: 23px;
+    text-align: justify;
+    padding: 3px;
+ }
+
+   /* fin de transit;*/
+ 
+.reunion-elements{
+ background-image: url(/EXER1/VICTOIRE.jpg)
+}
+ .textes-reunion{
+    width: 45%;
+    margin-left: 20%;
+    text-align: justify;
+    border-left: black solid 2px;
+    
+ }
+.reuni-clic{
+    color: blue;
+    text-decoration: none;
+    text-transform: none;
+
+}
+
+.services .row{
+    display: flex;
+    margin-bottom: 2rem;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    
+}
+.service-title{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30%;
+}
+.service-title img{
+    width: 10rem;
+    margin-right: 15px;
+    border-radius: 45%;
+  
+}
+.service-title h3{
+    font-size: 1.5rem;
+    color: rgb(4, 10, 10);
+    margin: left 2px;
+  
+}
+.service-title h3{
+    color: rgb(7, 7, 7);
+    border-bottom: solid rgb(54, 64, 67);
+    transition: 0.5s ease;
+}
+.service-title h3:hover{
+    color: rgb(5, 243, 64);
+    border-bottom: solid rgb(31, 8, 242);
+    transition: 0.5s ease;
+    margin-left: 3px;
+    background-image: url(../PICTURE/reunion2.jpg);
+}
+
+.service .p1{
+    padding-left: 1rem;
+    text-align: left;
+    font-size: 1.2rem; 
+    text-align: justify;
+
+    justify-content: space-between;
+}
+
+.service .p1:hover{
+    color: rgb(8, 7, 11);
+    border-bottom: solid rgb(16, 237, 13);
+    transition: 0.5s ease;
+    margin-right: 1px;
+    margin-left: 1px;
+   background-color: rgb(216, 122, 8);
+   background-image: url(../PICTURE/navire4.jpg);
+
+}
+/* style des mission*/
+
+/*.divo{
+   /* background-color: brown;
+}*/
+.div{
+     display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      border-radius: 200px;
+      background-color: rgb(177, 177, 220);
+      max-width: 80%;/*pour reduire la largeur de cette partie a 80*/
+      margin-left: 90px; /*pour le bouger de 80px de gauche*/
+
+  }
+  .div .div1 {
+      background-color:wheat;
+     border-radius: 5px 120px;
+     max-width: 50%;
+     padding: 1px;
+     border: solid 2px  white
+
+ }
+
+  .div .div1 ul li{
+ list-style-position: outside;
+ list-style-type: square;
+  font-size: 30px;
+
+  }
+ .div .div2 {
+     background-color:white;
+    border-radius: 5px 100px;
+     max-width: 50%;
+     padding: 1px; 
+      border: solid 2px  rgb(225, 223, 223)
+
+
+ }
+  .div .div2 ul li{
+ list-style-position: outside;
+ list-style-type: square;
+ font-size: 25px;
+  }
+
+  /*orientation conseile*/
+.orientation-elements{      /*orientation-elemts*/
+    background-image: url(/EXER1/manager-femme_shutterstock2.jpg);
+}
+.orientation{
+    color: rgb(0, 38, 255);
+    
+}
+  .repetitionfils{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+  }
+
+
+  /* pour la realisation*/
+  .realiation-elements{
+    background-image: url(/EXER1/06.avif);
+  }
+
+  .entete-relisation{
+     display: flex;
+     margin-left: 25%;
+     background-color: rgb(238, 206, 206);
+     border-radius: 80px 80px;
+     width: 50%;
+  }
+  .entete-relisation img{
+     width: 180px;
+     height: 180px;
+     margin-top: -4%;
+     border-radius: 70%;
+     border-top-right-radius:5px ;
+     flex-wrap: wrap;
+     margin-left: 40%;
+
+  }
+.relise-page{
+     background-color: rgb(236, 234, 231);
+     width: 85%;
+     margin-left: 6%;
+
+}
+
+  .realimage{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding-right:1px;
+     flex-wrap: wrap;
+     margin-bottom: 1px;
+     background-color: white;
+  }
+  .realimage img{
+       margin-bottom: 10px;
+       padding: 4px 20px;
+       border-radius: 100%;
+  }
+
+
+  .realimage img:hover{
+  
+     border: solid rgb(31, 8, 242);
+     transition: 0.5s ease;
+     border-radius:40%;
+     margin-left: 3px;
+     padding: 5px auto;
+     justify-content: flex-start;
+     border-radius:2%;
+     margin: 1px;
+
+  }
+
+.relise-page h2{
+     margin-top: 2rem;
+     margin-bottom: 1rem;
+     color: rgb(83, 38, 246);
+     font-size: 30px;
+     margin-left: 2%;
+}
+.relise-page h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+     color: rgb(3, 3, 3);
+    font-size: 30px;
+    text-align:center;
+    border-radius: 10%;
+    background-color:white;
+    width: 70%;
+    margin-left: 20%;
+}
+
+.relise-page h3:hover{
+     color: rgb(148, 230, 149);
+     border-bottom: solid rgb(31, 8, 242);
+     transition: 0.2s ease;
+     border-radius:20%;
+     margin-left: 3px;
+     padding: 5px auto;
+     cursor:alias;
+
+}
+
+.achat{
+color:rgb(29, 236, 205);
+background-color: rgb(45, 44, 44);
+font-weight:bolder;
+width: 20%;
+border-radius: 10px;
+text-align: center;
+padding: 3px auto;
+}
+
+.ppel{
+    margin-top: 10px;
+}
+.appel .clic{
+font-size: 30px;
+ margin-left: 25%;
+
+}
+.appel img{
+  margin-left: 1%;
+
+ 
+}
+.appel:hover{
+  margin-right: 2px;
+}
+
+
+form{
+    border: solid 2px rgb(225, 229, 238);
+    width: 40%;
+    padding: 25px;
+    background-color: rgba(21, 127, 241, 0.733);
+    border-radius: 3rem;
+   
+}
+form input[type="text"], form input[type="email"], form textarea{/*pour seletion tout ces elemem et les stylisee ensemble*/
+ padding: 2px;
+ font-size: 1.rem;
+ width: 100%;
+ border: solid 1px rgb(0, 0, 0);
+ margin: 6px 0px;
+ height: 50%;
+}
+form input[type="submit"]{
+    font-size: 1rem;
+    background-color: rgb(238, 238, 240);
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: rgb(15, 15, 225);
+    text-transform: capitalize;
+    border-radius: 2rem;
+}
+.whasapp{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+.whasapp img.logo{
+    height: 70px;
+    justify-items: center;
+}
+.whasapp span.phone{
+ font-size: 25px;
+ font-weight: bold;
+}
+.form{
+    position: relative; /*pour permettre a la forme de glisser sur l'image)*/
+    margin-bottom: 15%;
+}
+
+.form img{
+    width: 35%;
+    height: 25rem;
+    margin-left: 20%;
+  
+}
+.form form{
+    position: absolute;
+    top: 2px;
+    left: 25%;
+
+}
+/* piede de page styliation*/
+.foot-entete{
+     display: flex;
+     justify-content: space-around;
+     background-color: black;
+     height: 40px;
+     align-items: center;
+     flex-wrap: nowrap;
+}
+
+.foot-apropos{
+     display: flex;
+     flex-wrap: wrap;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+}
+
+.enfant3 ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li{
+    list-style:none;
+}
+
+ul li a{
+text-decoration: none;
+font-size:20px;
+/*color: white;*/
+color:blue;
+
+line-height: 40px;
+flex-wrap: wrap;
+
+
+}
+ 
+ul li a:hover{
+     /*color: rgb(238, 237, 244);*/
+     color: white;
+     transition: 0.1s ease; 
+     margin-right: 2%;
+     /*  border-bottom: solid white;
+     border-top: solid white;
+     border-left: solid white;
+     border-right: solid white;*/
+      border-bottom: solid blue;
+     font-size: 26px;
+     border-radius:3%;
+     width: 100%;
+}
+
+
+.partenaire{
+     text-decoration: none;
+     font-size:20px;
+     color: rgb(9, 9, 9);
+     line-height: 38px;
+     font-size: x-large;
+     cursor: pointer;
+      /* pour transformer le curseur
+    background-color: blue;
+          en main au touchee des ecriture*/
+    background-color: rgb(173, 173, 204);
+
+    border-radius: 13px;
+    flex-wrap: nowrap;
+   
+}
+.partenaire:hover{
+  
+       background-color: white;
+    
+  
+}
+.partenaire ul li:hover{
+    background-color: white;
+    transition: 0.5s ease;
+    margin-left: 2px;
+    color: blue;
+    border-bottom: solid blue;
+
+}
+
+footer{
+     width: 100%;
+    /* background-color: blue;*/
+    background-color: rgb(222, 207, 207);
+     color: white; 
+     margin-top:-6%;
+     /* background-color: rgb(14, 67, 224);*/
+ 
+}
+footer p{
+    font-size:20px;
+    text-align: center;
+    padding: 15px 0px;
+    flex-wrap: wrap;
+    color: black;
+}
+footer p a{
+    text-decoration: none;
+    font-weight: bold;
+
+    color: blue; 
+}
